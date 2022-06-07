@@ -1,21 +1,110 @@
+
+@import "~bootstrap/scss/bootstrap";
+
 .App {
     min-width: 900px;
 }
-.section{
-    height: fit-content;
-    min-height: 900px;
+.navbar-container{
+    width: 90%;
+    max-width: none !important;
+}
+section{
     // outline: 1px solid rgba(0, 0, 0, 0.667);
-    padding: none;
-    background-color: #07192f;
+    height: 100vh !important;
     position: relative;
-    overflow: hidden;
+    background-color: #07192f;
+    display: flex !important;
+    justify-content: left !important;
 
     // &:nth-child(2n) {
     //     background: #eee;
     // }
 }
+#section-1{
+    min-height: 500px !important;
+    height: 100vh !important;
+    justify-content: center !important;
+}
+#section-2{
+    background: -webkit-gradient(linear, top left, bottom left, from(#07192f), to(#386844));
+    background: -webkit-linear-gradient(#07192f, #386844);
+    background: linear-gradient(#07192f,#386844);
+}
+#section-3{
+    background: -webkit-gradient(linear, top left, bottom left, from(#386844), to(#5d966b));
+    background: -webkit-linear-gradient(#386844, #5d966b);
+    background: linear-gradient(#386844,#5d966b);
+}
+#section-4{
+    background: -webkit-gradient(linear, top left, bottom left, from(#5d966b), to(#7fd895));
+    background: -webkit-linear-gradient(#5d966b, #7fd895);
+    background: linear-gradient(#5d966b,#7fd895);
+}
+#section-5{
+    background: -webkit-gradient(linear, top left, bottom left, from(#7fd895), to(#bae7bf));
+    background: -webkit-linear-gradient(#7fd895, #bae7bf);
+    background: linear-gradient(#7fd895,#bae7bf);
+}
+#section-6{
+    background-color: white;
+}
+body #fp-nav ul li a span{
+    background: white;
+}
+.fp-viewing-contact #fp-nav ul li a span{
+    background: black;
+}
+.header{
+    position:fixed;
+    height: 60px;
+    display:block;
+    width: 100%;
+    background: #e8e8e8;
+    z-index:9;
+    text-align:center;
+    color: #07192f;;
+    padding: 0;
+    top:0px;
+
+    h1{
+
+        margin: 0;
+        font-size: 30px;
+    }
+
+    &_logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-left: 10vw;
+        float: left;
+        max-height: 100%;
+        width: 140px;
+    }
+    &_navbar{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-right: 10vw;
+        color: #07192f;;
+        width: fit-content;
+        float: right;
+        max-height: 100%;
+        >ul{
+            margin: 0;
+        }
+        >ul>li{
+            display: inline-block;
+            width: 100px;
+            margin: 0px 15px;
+        }
+    }
+}
+.header-logo{
+    max-height:40px;
+}
 .portfolio{
-    padding-top: 40px;
+    padding-top: 0px;
 }
 .sub-heading{
     margin: 5px 0;
@@ -41,31 +130,35 @@
     color: #fff;
     font-size: 20px;
 }
+.intro{
+    &-title{
+        display: block;
+        font-size: 4em;
+        margin-top: 0px;
+        height:fit-content;
+        margin-bottom: 10px;
+        padding-bottom: none;
+        color: #fff;
+        width:fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+    }
+    &-container{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    &-occupation{
+        font-size: 24px;
+        font-family: 'Ubuntu';
+        color:rgba(24, 253, 165, 0.8);
+    }
+}
 
-.intro-title{
-    display: block;
-    font-size: 4em;
-    margin-top: 35vh;
-    height:fit-content;
-    margin-bottom: 10px;
-    padding-bottom: none;
-    color: #fff;
-    width:fit-content;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    font-family: 'Oswald', sans-serif;
-}
-.intro-occupation{
-    font-size: 24px;
-    display: block;
-    font-family: 'Ubuntu';
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    color:rgba(24, 253, 165, 0.8);
-}
 .what-slogan {
     font-size: 32px;
     color: #fff;
@@ -82,11 +175,19 @@
     margin-right: auto;
     text-align: center;
 }
+.headshot-container{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 .headshot{
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 200px;
+    max-height: 200px;
     width: 30vw;
     height: 30vw;
+    min-width: 150px;
+    min-height: 150px;
     background-image: url("../public/cropped_headshot.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,53 +196,57 @@
     margin-left: auto;
     margin-right: auto;
 }
-.what-skills{
-    margin-top: 50px;
-    width: 600px;
+.what-text{
+    width: fit-content;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
+.what-skills{
+    max-width: 893px;
+    margin-top: 30px;
+    width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+    &_title{
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        >h2{
+        color: white;
+        }
+    }
+}
 .skill{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-color:#000;
     display: inline-block;
     border-radius: 76px;
-    &.webdev{
-        background-image: url(../public/webdev-icon-cropped.png);
-        background-size: contain;
-        background-position: center;
-        margin-left:100px;
-        margin-right: 50px;
-    }
-    &.ui-design{
-        background-image: url(../public/ux-icon.png);
-        background-size: contain;
-        background-position: center;
-        margin-left: 50px;
-        margin-right:100px;
-    }
+    margin: 0px 30px;
 }
 .container{
-    width:auto;
     height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 893px;
     &.what-container{
-        margin-top: 60px;
-        margin-bottom: 200px;
+        height: fit-content;
+        padding-top: 100px;
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        border-bottom: 2px solid white;
     }
 }
 
 .divider{
-    margin-top:60px;
+    margin-top: 0px;
     margin-bottom:60px;
     display: block;
     .div-one{
         width:100%;
-        height: 3px;
-        background: linear-gradient(to right, #07192f 0%, rgba(255, 255, 255, 0.4) 50%, #07192f 100%);
+        height: 4px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0)  0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
 
     }
     .div-two{
@@ -149,7 +254,7 @@
         width: 100%;
         height: 3px;
         background-color: #fff;
-        background: linear-gradient(to right, #07192f 15%, rgba(255, 255, 255, 0.4) 50%,#07192f 85%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0) 85%);
     }
 }
 .divider-white{
@@ -171,40 +276,52 @@
 
 
 .project{
+    margin-top: 100px;
     max-width: 900px;
     height: fit-content;
-    display: block;
+    max-height: 86px;
     margin-left: auto;
     margin-right: auto;
 
     .project-title{
-        padding-bottom:30px;
+        padding-bottom: 16px;
+        text-align: left;
+        height: fit-content;
         font-size: 42px;
-        text-align: center;
-        width:100%;
         color: #fff;
         font-family: 'Lato', sans-serif;;
     }
     .project-picture{
-        height: 300px;
-        width:40%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto 50px auto;
+        width: 40vw;
+        min-width: 400px;
+        height: fit-content;
+        padding: 0;
+        >video{
+            padding: 0;
+            width: 100%;
+        }
 
     }
     .antsim-picture{
         border: 3px solid white;
         float:left;
-        background-image: url(../public/antgame-gamescreen-cropped.png);
-        background-size: contain;
+        background-image: url(./img/antgame-clip-thumbnail.png);
+        background-size: cover;
         background-position: center;
     }
-
     .climateflight-picture{
-        border: 3px solid #07192f;
+        border: 3px solid white;
         float:left;
-        background-image: url(../public/climateflight-picture.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-image: url(./img/climateflight-clip-thumbnail.png);
+    }
+    .dcf-calculator-picture{
+        background-image: url(./img/dcf-calculator-thumbnail.png);
+        border: 3px solid white;
+        float:left;
     }
     .climateflight-body{
         color: #07192f;
@@ -213,15 +330,17 @@
         margin-top: 60px;
         color: #07192f;
     }
-    .project-description{
+    .project .project-description{
+        padding-top: 50px;
+        border-top: 3px solid white;
         font-size: 22px !important;
-        float: left;
         padding: 0px 0px 0px 18px;
-        width:56%;
-        height: 300px;
+        height: fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .project-link-container{
-        padding-top:30px;
         float:right;
         width: 100%;
         height: 72px;
@@ -242,9 +361,81 @@
         }
     }
 }
-.ant-simulation{
-    margin-top:100px;
+.libraries{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    padding-top: 60px;
+    &_wrapper{ 
+        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    &_icon{
+        margin: 0px 30px;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        width: 160px;
+        border-radius: 80px;
+        background-color: white;
+        >div{
+            max-height: 100%;
+            max-width: 100%;
+            background-color: white;
+            background-position: center;
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        >img{
+            max-height: 100%;
+            max-width: 100%;
+            height: 100px;
+            border-radius: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &.small{ 
+            margin-bottom: 30px;
+        }
+        &.apache{
+            >img{
+            height: 73px;
+            }
+        }
+        &.node{
+            >img{
+            height: 86px;
+            }
+        }
+        &.angular{
+            >img{
+            height: 120px;
+            }
+        }
+    }
+    &_button{
+        margin-top: 30px;
+        width: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_what{
+        padding-top: 0;
+        width: 100%;
+    }
 }
+.btn-dark{
+    border: 2px solid white;
+}
+// .ant-simulation{
+//     margin-top:100px;
+// }
 .climateflight{
     height: 700px;
     padding-top: 30px;
@@ -268,4 +459,313 @@
     display:  block;
     margin-left: auto;
     margin-right: auto;
+}
+.contact-container{
+    height: 100%;
+}
+.contact-left{
+    background-color: white;
+}
+.contact-right{
+    width: 50%;
+    padding: 200px 0px 100px 0px;
+    height: 100vh;
+    background-color: #9399fd;
+    display: flex;
+    align-items: center;
+}
+.contact-header-container{
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.contact-left-container{
+    position: absolute;
+    top: 0px;
+    padding: 200px 0px 100px 0px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.contact-header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #37384c;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    margin-top: 100px;
+}
+.contact-box{
+    height: 380px;
+    width: 100%;
+    padding: 30px;
+    background-color: #b8bcfe;
+    display: flex;
+    align-items: center;
+}
+.contact-wrapper{
+    height: 200px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid white;
+}
+.contact-email{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    color: #37384c;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+}
+.contact-text-container{
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    height: 380px;
+    align-items: center;
+    background-color: #b8bcfe;
+}
+.contact-text-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 450px;
+    padding: 20px;
+    border: 8px solid white;
+    text-align: center;
+}
+.contact-text{
+    height: 380px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #37384c;
+}
+.contact-links-wrapper{
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    >div{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+}
+.contact-indeed{
+    >a>img{
+        height:63px;
+    }
+}
+.contact-linkedin{
+    >a>img{
+        height: 70px;
+    }
+}
+.footer{
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    >p{
+        display: block;
+        padding: 0px 30px; 
+        width: fit-content;
+    }
+}
+.ip-tag{
+    margin-left: 0px;
+    margin-right: auto;
+}
+.fp-attribution{
+    margin-right: 0px;
+    margin-left: auto;
+}
+.fp-watermark{
+    display: none !important;
+}
+@media screen and (max-width: 1100px){
+    #section-2{
+        height: fit-content !important;
+    }
+    #section-6{
+        height: fit-content !important;
+        min-height: 0px;
+    }
+    .section{
+        min-height: 1180px;
+        height: 100vh;
+    }
+    .project-title{
+        width: 100%;
+        text-align: center !important;
+    }
+    .project .project-picture{
+        width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .climateflight-picture{
+        height: 28.14vw !important;
+    }
+    .dcf-calculator-picture{
+        height: 33.48vw !important;
+    }
+    .antsim-picture{
+        height: 33.48vw !important;
+    }
+    .project .project-description{
+        width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        border-top: 3px solid white;
+    }
+    .libraries_what{
+        width: 100%;
+    }
+    .libraries_wrapper{
+        width: 100vw;
+    }
+    .contact-header-container{
+        height: fit-content;
+    }
+    .contact-header{
+        margin: 30px auto 30px auto;
+    }
+    .contact-container{
+        height: fit-content;
+        width:100%;
+    }
+    .contact-left-container{
+        height: fit-content;
+        padding: 0;
+        width:100%;
+        position: static;
+    }
+    .contact-right{
+        position: static;
+        height: fit-content;
+        padding: 0;
+        width: 100%;
+    }
+    .contact-box{
+        height: 300px;
+        padding: 0;
+        background-color: #fff;
+    }
+    .contact-text-container{
+        background-color: #fff;
+        height: 320px;
+        padding: 0 0 60px 0;
+    }
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 707px){
+    .section{
+        min-width: 320px;
+        min-height: 1380px;
+    }
+    .libraries_icon{
+        margin: 10px 20px;
+    }
+    .project{
+    .project-picture{
+        min-width: 288px;
+        width: 90vw;
+        >div>video{
+            display: none !important;
+        }
+    }
+    .project-description{
+        width: 80vw;
+        min-width: 260px;
+    }
+    .antsim-picture{
+        height: 50.22vw !important;
+        min-height: 160px;
+        background-image: url(./img/antgame-clip-thumbnail.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .climateflight-picture{
+        height: 42.21vw !important;
+        border: 3px solid white;
+        min-height: 135px;
+        float:left;
+        background-image: url(./img/climateflight-clip-thumbnail.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .dcf-calculator-picture{
+        height: 50.22vw !important;
+        min-height: 160px;
+        background-image: url(./img/dcf-calculator-thumbnail.png);
+        border: 3px solid white;
+        float:left;
+        background-size: cover;
+        background-position: center;
+    }
+    }
+}
+@media screen and (min-width: 1101px){
+    #section-2{
+        height: fit-content !important;
+    }
+    .container{
+        &.what-container{
+            width: 90%;
+            display: flex;
+            justify-content: left;
+            max-width: 940px;
+
+        }
+    }
+    .project{
+        max-width: 1100px;
+        width: 1100px;
+    }
+    
+    .project .project-picture{
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: auto;
+        max-width: 520px;
+        margin-left: auto;
+    }
+
+    .project-description{
+        float: left;
+        width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+        border-top: 0px;
+    }
+    .libraries{
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 460px){
+    .section{
+        min-height: 1670px;
+    }
+
+    .libraries_icon{
+        margin: 10px 20px;
+    }
 }
