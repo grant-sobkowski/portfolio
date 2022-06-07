@@ -1,18 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.6aca1640.css",
-    "main.js": "/portfolio-website/static/js/main.6cf923d4.js",
+    "main.css": "/portfolio-website/static/css/main.ae039ccb.css",
+    "main.js": "/portfolio-website/static/js/main.5c761d9d.js",
     "static/js/787.30237536.chunk.js": "/portfolio-website/static/js/787.30237536.chunk.js",
-    "static/media/climateflight-picture.jpg": "/portfolio-website/static/media/climateflight-picture.439eac6c6d713080c0ed.jpg",
-    "static/media/antgame-gamescreen-cropped.png": "/portfolio-website/static/media/antgame-gamescreen-cropped.f37a6747baf914003f19.png",
+    "static/media/antgame-clip.mp4": "/portfolio-website/static/media/antgame-clip.c1953193dd8db07b25df.mp4",
+    "static/media/climateflight-demo.mp4": "/portfolio-website/static/media/climateflight-demo.630745edd58c3fe49507.mp4",
+    "static/media/dcf-calculator-clip.mp4": "/portfolio-website/static/media/dcf-calculator-clip.d4970a9ae81c624b8054.mp4",
+    "static/media/antgame-clip-thumbnail.png": "/portfolio-website/static/media/antgame-clip-thumbnail.d576abd8d6ecf42e672f.png",
+    "static/media/phaserjs.png": "/portfolio-website/static/media/phaserjs.c3b32abeffbae0f94f9b.png",
+    "static/media/reactjs.png": "/portfolio-website/static/media/reactjs.8a6fc0a24a800d1e0f4a.png",
+    "static/media/climateflight-clip-thumbnail.png": "/portfolio-website/static/media/climateflight-clip-thumbnail.adab633dea80d50b8d09.png",
+    "static/media/dcf-calculator-thumbnail.png": "/portfolio-website/static/media/dcf-calculator-thumbnail.3d990b4105b6cc650776.png",
+    "static/media/MERN-logo.png": "/portfolio-website/static/media/MERN-logo.39d4f78651cc4a93b96f.png",
+    "static/media/indeed-logo.png": "/portfolio-website/static/media/indeed-logo.73f1a4673f71a88ad39b.png",
+    "static/media/portfolio-logo.png": "/portfolio-website/static/media/portfolio-logo.a6301e5bb2f22c61af10.png",
+    "static/media/apache-feather-text2.png": "/portfolio-website/static/media/apache-feather-text2.2c992ddb6d4e56df0e29.png",
+    "static/media/mongodb.png": "/portfolio-website/static/media/mongodb.25e861b553bfa699bbda.png",
     "static/media/cropped_headshot.jpg": "/portfolio-website/static/media/cropped_headshot.7114ca37722c19e816c8.jpg",
+    "static/media/angularjs.png": "/portfolio-website/static/media/angularjs.f04f7b6342a405c935e9.png",
+    "static/media/php.png": "/portfolio-website/static/media/php.210fbd2df0a43575347e.png",
     "index.html": "/portfolio-website/index.html",
-    "main.6aca1640.css.map": "/portfolio-website/static/css/main.6aca1640.css.map",
-    "main.6cf923d4.js.map": "/portfolio-website/static/js/main.6cf923d4.js.map",
+    "main.ae039ccb.css.map": "/portfolio-website/static/css/main.ae039ccb.css.map",
+    "main.5c761d9d.js.map": "/portfolio-website/static/js/main.5c761d9d.js.map",
     "787.30237536.chunk.js.map": "/portfolio-website/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6aca1640.css",
-    "static/js/main.6cf923d4.js"
+    "static/css/main.ae039ccb.css",
+    "static/js/main.5c761d9d.js"
   ]
 }
